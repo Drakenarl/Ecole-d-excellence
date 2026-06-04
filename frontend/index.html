@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>École Excellence — Portail</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>🏫</text></svg>">
+</head>
+<body>
+
+<!-- ═══════════════ ÉCRAN CONNEXION ══════════════════════════ -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="login-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div>
+        <div class="login-logo-title">École Excellence</div>
+        <div class="login-logo-sub">Portail de gestion scolaire</div>
+      </div>
+    </div>
+    <div class="login-title">Connexion</div>
+    <div class="login-sub">Accédez à votre espace personnel</div>
+    <div class="login-error" id="login-error"></div>
+    <div class="form-group">
+      <label class="form-label">Adresse email</label>
+      <input class="form-input" id="login-email" type="email" placeholder="votre@email.com" autocomplete="email">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Mot de passe</label>
+      <input class="form-input" id="login-password" type="password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="btn btn-primary" id="btn-login" style="width:100%;padding:10px;font-size:14px;margin-top:4px">
+      Se connecter
+    </button>
+    <div class="login-switch">
+      Parent ? <a onclick="showRegister()">Créer votre compte avec un code d'accès</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ ÉCRAN INSCRIPTION PARENT ═════════════════ -->
+<div id="register-screen">
+  <div class="register-card">
+    <div class="login-logo" style="margin-bottom:20px">
+      <div class="login-logo-icon" style="background:#1a1a3a">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div>
+        <div class="login-logo-title">École Excellence</div>
+        <div class="login-logo-sub">Espace parent</div>
+      </div>
+    </div>
+    <div class="login-title" style="font-size:18px">Créer votre compte parent</div>
+    <div class="login-sub">Utilisez le code fourni par l'école pour lier votre compte à vos enfants.</div>
+    <div class="login-error" id="register-error"></div>
+    <div class="form-row form-row-2">
+      <div class="form-group"><label class="form-label">Prénom</label><input class="form-input" id="r-prenom" placeholder="Votre prénom"></div>
+      <div class="form-group"><label class="form-label">Nom</label><input class="form-input" id="r-nom" placeholder="Votre nom"></div>
+    </div>
+    <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="r-email" type="email" placeholder="votre@email.com"></div>
+    <div class="form-group"><label class="form-label">Téléphone</label><input class="form-input" id="r-tel" type="tel" placeholder="+229 XX XX XX XX"></div>
+    <div class="form-group"><label class="form-label">Mot de passe (min. 6 caractères)</label><input class="form-input" id="r-password" type="password" placeholder="••••••••"></div>
+    <div class="form-group">
+      <label class="form-label">Code d'accès fourni par l'école</label>
+      <input class="form-input" id="r-code" placeholder="Ex: A3F9B2D1" style="font-family:monospace;font-size:16px;letter-spacing:3px;text-transform:uppercase">
+    </div>
+    <button class="btn btn-primary" id="btn-register" style="width:100%;padding:10px;font-size:14px;margin-top:4px">
+      Créer mon compte
+    </button>
+    <div class="login-switch">
+      Déjà inscrit ? <a onclick="showLogin()">Se connecter</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ APPLICATION PRINCIPALE ═══════════════════ -->
+<div id="app">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div>
+        <div class="sidebar-logo-name">École Excellence</div>
+        <div class="sidebar-logo-year" id="annee-label">2025–2026</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- Rempli dynamiquement selon le rôle -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-chip">
+        <div class="avatar-circle" id="user-initials">—</div>
+        <div>
+          <div class="user-name" id="user-fullname">—</div>
+          <div class="user-role" id="user-role-label">—</div>
+        </div>
+        <button class="btn-logout" onclick="logout()" title="Se déconnecter">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── Zone principale ── -->
+  <div class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title" id="topbar-title">Tableau de bord</div>
+        <div class="topbar-sub" id="topbar-sub"></div>
+      </div>
+      <div class="topbar-spacer"></div>
+      <div class="topbar-search" id="topbar-search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="topbar-search-input" placeholder="Rechercher...">
+      </div>
+    </div>
+    <div class="content" id="main-content">
+      <!-- Contenu chargé dynamiquement -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODALS PARTAGÉES ═════════════════════════ -->
+
+<!-- Modal générique vue détail -->
+<div class="modal-backdrop" id="modal-view">
+  <div class="modal" style="width:680px">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-view-title">Détail</span>
+      <button class="modal-close" onclick="closeModal('modal-view')">✕</button>
+    </div>
+    <div class="modal-body" id="modal-view-body"></div>
+  </div>
+</div>
+
+<!-- Modal bulletin -->
+<div class="modal-backdrop" id="modal-bulletin">
+  <div class="modal" style="width:720px">
+    <div class="modal-header">
+      <span class="modal-title">Bulletin scolaire</span>
+      <button class="modal-close" onclick="closeModal('modal-bulletin')">✕</button>
+    </div>
+    <div class="modal-body" id="modal-bulletin-body"></div>
+  </div>
+</div>
+
+<!-- Modal formulaire élève -->
+<div class="modal-backdrop" id="modal-eleve">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-eleve-title">Inscrire un élève</span>
+      <button class="modal-close" onclick="closeModal('modal-eleve')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Prénom *</label><input class="form-input" id="f-prenom" placeholder="Prénom"></div>
+        <div class="form-group"><label class="form-label">Nom *</label><input class="form-input" id="f-nom" placeholder="Nom de famille"></div>
+      </div>
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Classe *</label>
+          <select class="form-select" id="f-classe"><option value="">Sélectionner...</option></select>
+        </div>
+        <div class="form-group"><label class="form-label">Sexe *</label>
+          <select class="form-select" id="f-sexe"><option value="">—</option><option value="M">Masculin</option><option value="F">Féminin</option></select>
+        </div>
+      </div>
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Date de naissance</label><input class="form-input" id="f-dob" type="date"></div>
+        <div class="form-group"><label class="form-label">Lieu de naissance</label><input class="form-input" id="f-lieu" placeholder="Ville"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Adresse</label><input class="form-input" id="f-adresse" placeholder="Adresse complète"></div>
+      <div style="border-top:1px solid var(--border);margin:16px 0;padding-top:16px">
+        <div class="card-title" style="margin-bottom:12px">Informations du parent / tuteur</div>
+        <div class="form-group"><label class="form-label">Nom complet du parent</label><input class="form-input" id="f-parent" placeholder="Prénom Nom"></div>
+        <div class="form-row form-row-2">
+          <div class="form-group"><label class="form-label">Téléphone</label><input class="form-input" id="f-tel" placeholder="+229 ..."></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modal-eleve')">Annuler</button>
+      <button class="btn btn-primary" id="btn-save-eleve">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal formulaire professeur -->
+<div class="modal-backdrop" id="modal-prof">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-prof-title">Ajouter un professeur</span>
+      <button class="modal-close" onclick="closeModal('modal-prof')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Prénom *</label><input class="form-input" id="pf-prenom" placeholder="Prénom"></div>
+        <div class="form-group"><label class="form-label">Nom *</label><input class="form-input" id="pf-nom" placeholder="Nom"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email *</label><input class="form-input" id="pf-email" type="email" placeholder="prof@ecole.bj"></div>
+      <div class="form-group"><label class="form-label">Mot de passe *</label><input class="form-input" id="pf-password" type="password" placeholder="Minimum 6 caractères"></div>
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Matière principale *</label><input class="form-input" id="pf-matiere" placeholder="Ex: Mathématiques"></div>
+        <div class="form-group"><label class="form-label">Heures / semaine</label><input class="form-input" id="pf-heures" type="number" placeholder="18"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Téléphone</label><input class="form-input" id="pf-tel" placeholder="+229 ..."></div>
+      <div class="form-group"><label class="form-label">Statut</label>
+        <select class="form-select" id="pf-statut"><option value="actif">Actif</option><option value="inactif">Inactif</option></select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modal-prof')">Annuler</button>
+      <button class="btn btn-primary" id="btn-save-prof">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal code d'accès parent -->
+<div class="modal-backdrop" id="modal-code">
+  <div class="modal" style="width:480px">
+    <div class="modal-header">
+      <span class="modal-title">Générer un code d'accès parent</span>
+      <button class="modal-close" onclick="closeModal('modal-code')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Sélectionner le ou les enfants du parent</label>
+        <select class="form-select" id="code-eleve-select">
+          <option value="">Chargement...</option>
+        </select>
+        <div style="margin-top:8px;font-size:12px;color:var(--text-3)">Plusieurs enfants ? Sélectionner le premier, puis ajouter les autres.</div>
+      </div>
+      <div id="code-eleves-selectionnes" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;min-height:28px"></div>
+      <div id="code-resultat" style="display:none;text-align:center;padding:20px 0">
+        <div style="font-size:13px;color:var(--text-2);margin-bottom:12px">Code à remettre au parent :</div>
+        <div class="code-badge" id="code-valeur"></div>
+        <div style="font-size:12px;color:var(--text-3);margin-top:10px">Valable 30 jours — usage unique</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modal-code')">Fermer</button>
+      <button class="btn btn-primary" id="btn-gen-code">Générer le code</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal absence -->
+<div class="modal-backdrop" id="modal-absence">
+  <div class="modal" style="width:440px">
+    <div class="modal-header">
+      <span class="modal-title">Enregistrer une absence</span>
+      <button class="modal-close" onclick="closeModal('modal-absence')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Élève *</label>
+        <select class="form-select" id="abs-eleve"><option value="">Sélectionner...</option></select>
+      </div>
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Date *</label><input class="form-input" id="abs-date" type="date"></div>
+        <div class="form-group"><label class="form-label">Cours</label><input class="form-input" id="abs-cours" placeholder="Ex: Mathématiques"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Motif</label><input class="form-input" id="abs-motif" placeholder="Absence sans justificatif"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modal-absence')">Annuler</button>
+      <button class="btn btn-primary" onclick="saveAbsence()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal EDT créneau -->
+<div class="modal-backdrop" id="modal-edt">
+  <div class="modal" style="width:440px">
+    <div class="modal-header">
+      <span class="modal-title">Ajouter un créneau</span>
+      <button class="modal-close" onclick="closeModal('modal-edt')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Classe *</label><select class="form-select" id="edt-f-classe"><option value="">—</option></select></div>
+        <div class="form-group"><label class="form-label">Jour *</label>
+          <select class="form-select" id="edt-f-jour">
+            <option>Lundi</option><option>Mardi</option><option>Mercredi</option>
+            <option>Jeudi</option><option>Vendredi</option><option>Samedi</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label class="form-label">Professeur *</label><select class="form-select" id="edt-f-prof"><option value="">Sélectionner...</option></select></div>
+      <div class="form-row form-row-2">
+        <div class="form-group"><label class="form-label">Créneau *</label>
+          <select class="form-select" id="edt-f-creneau">
+            <option>07:30-09:30</option><option>09:30-11:30</option>
+            <option>11:30-13:30</option><option>13:30-15:30</option><option>15:30-17:30</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Salle</label><input class="form-input" id="edt-f-salle" placeholder="Salle 12"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modal-edt')">Annuler</button>
+      <button class="btn btn-primary" onclick="saveSlotEDT()">Ajouter</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div id="toast-container"></div>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
