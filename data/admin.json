@@ -1,0 +1,17 @@
+{
+  "_id": "admin_1",
+  "nom": "Diallo",
+  "prenom": "Administrateur",
+  "email": "admin@ecole.bj",
+  "password_hash": "ac9689e2272427085e35b9d3e3e8bed88cb3434828b43b86fc0596cad4c6e270",
+  "role": "admin",
+  "ecole": {
+    "nom": "École Excellence Cotonou",
+    "adresse": "Quartier Cadjèhoun, Cotonou, Bénin",
+    "telephone": "+229 21 30 XX XX",
+    "email": "contact@ecole-excellence.bj",
+    "annee_scolaire": "2025-2026",
+    "systeme_notation": 20,
+    "devise": "XOF"
+  }
+}

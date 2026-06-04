@@ -1,0 +1,154 @@
+[
+  {
+    "_id": "prof_1",
+    "nom": "Martinez",
+    "prenom": "Augustin",
+    "email": "zacharieletellier@example.org",
+    "telephone": "0139339827",
+    "matiere": "Mathématiques",
+    "classes": [
+      "6ème B",
+      "6ème A",
+      "4ème B",
+      "5ème A"
+    ],
+    "heures_semaine": 17,
+    "date_embauche": "2015-01-03",
+    "statut": "actif",
+    "salaire": 206868,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_2",
+    "nom": "Briand",
+    "prenom": "Frédéric",
+    "email": "thomas29@example.org",
+    "telephone": "06 65 77 49 06",
+    "matiere": "Français",
+    "classes": [
+      "6ème B",
+      "4ème A",
+      "5ème B",
+      "6ème A"
+    ],
+    "heures_semaine": 14,
+    "date_embauche": "2012-02-07",
+    "statut": "actif",
+    "salaire": 240990,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_3",
+    "nom": "Godard",
+    "prenom": "Henriette",
+    "email": "valentine10@example.org",
+    "telephone": "+33 (0)3 58 31 32 62",
+    "matiere": "Sciences",
+    "classes": [
+      "6ème A",
+      "4ème A",
+      "6ème B",
+      "3ème A"
+    ],
+    "heures_semaine": 20,
+    "date_embauche": "2014-12-11",
+    "statut": "conge",
+    "salaire": 334472,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_4",
+    "nom": "Legrand",
+    "prenom": "Matthieu",
+    "email": "danielregnier@example.net",
+    "telephone": "+33 (0)1 80 96 28 13",
+    "matiere": "Histoire-Géographie",
+    "classes": [
+      "6ème A",
+      "3ème A",
+      "6ème B"
+    ],
+    "heures_semaine": 20,
+    "date_embauche": "2017-08-19",
+    "statut": "actif",
+    "salaire": 220758,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_5",
+    "nom": "Pasquier",
+    "prenom": "Christiane",
+    "email": "sberger@example.net",
+    "telephone": "0366778417",
+    "matiere": "Anglais",
+    "classes": [
+      "4ème B",
+      "6ème A"
+    ],
+    "heures_semaine": 15,
+    "date_embauche": "2018-07-10",
+    "statut": "actif",
+    "salaire": 274104,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_6",
+    "nom": "Da Silva",
+    "prenom": "Alex",
+    "email": "elisabethvincent@example.net",
+    "telephone": "01 46 84 97 02",
+    "matiere": "Éducation physique",
+    "classes": [
+      "4ème A",
+      "3ème A",
+      "6ème A"
+    ],
+    "heures_semaine": 21,
+    "date_embauche": "2022-01-10",
+    "statut": "actif",
+    "salaire": 279230,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_7",
+    "nom": "Roussel",
+    "prenom": "Thierry",
+    "email": "bouvetmichelle@example.com",
+    "telephone": "+33 4 89 81 62 03",
+    "matiere": "Arts plastiques",
+    "classes": [
+      "4ème A",
+      "3ème A"
+    ],
+    "heures_semaine": 19,
+    "date_embauche": "2022-12-13",
+    "statut": "actif",
+    "salaire": 198233,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  },
+  {
+    "_id": "prof_8",
+    "nom": "Delahaye",
+    "prenom": "Auguste",
+    "email": "trodrigues@example.net",
+    "telephone": "0339939328",
+    "matiere": "Informatique",
+    "classes": [
+      "5ème B",
+      "3ème A"
+    ],
+    "heures_semaine": 18,
+    "date_embauche": "2011-10-16",
+    "statut": "actif",
+    "salaire": 206476,
+    "password_hash": "1ec76e799fcbdafce642c640793c7ca39a586bd17166ba0d4f9c98c65713b284",
+    "role": "professeur"
+  }
+]

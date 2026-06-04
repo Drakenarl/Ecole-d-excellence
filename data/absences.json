@@ -1,0 +1,322 @@
+[
+  {
+    "_id": "abs_1",
+    "eleve_id": "eleve_96",
+    "date": "2025-03-16",
+    "motif": "Raison familiale",
+    "justifiee": true,
+    "cours": "Sciences"
+  },
+  {
+    "_id": "abs_2",
+    "eleve_id": "eleve_5",
+    "date": "2025-07-07",
+    "motif": "Rendez-vous médical",
+    "justifiee": false,
+    "cours": "Sciences"
+  },
+  {
+    "_id": "abs_3",
+    "eleve_id": "eleve_88",
+    "date": "2025-05-05",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Anglais"
+  },
+  {
+    "_id": "abs_4",
+    "eleve_id": "eleve_87",
+    "date": "2025-02-19",
+    "motif": "Raison familiale",
+    "justifiee": true,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_5",
+    "eleve_id": "eleve_53",
+    "date": "2025-12-30",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Anglais"
+  },
+  {
+    "_id": "abs_6",
+    "eleve_id": "eleve_111",
+    "date": "2025-06-25",
+    "motif": "Raison familiale",
+    "justifiee": false,
+    "cours": "Éducation physique"
+  },
+  {
+    "_id": "abs_7",
+    "eleve_id": "eleve_67",
+    "date": "2025-08-19",
+    "motif": "Raison familiale",
+    "justifiee": false,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_8",
+    "eleve_id": "eleve_61",
+    "date": "2025-03-13",
+    "motif": "Sans motif",
+    "justifiee": false,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_9",
+    "eleve_id": "eleve_115",
+    "date": "2025-04-24",
+    "motif": "Raison familiale",
+    "justifiee": false,
+    "cours": "Anglais"
+  },
+  {
+    "_id": "abs_10",
+    "eleve_id": "eleve_50",
+    "date": "2025-06-07",
+    "motif": "Sans motif",
+    "justifiee": false,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_11",
+    "eleve_id": "eleve_10",
+    "date": "2025-08-14",
+    "motif": "Raison familiale",
+    "justifiee": true,
+    "cours": "Sciences"
+  },
+  {
+    "_id": "abs_12",
+    "eleve_id": "eleve_101",
+    "date": "2025-03-17",
+    "motif": "Autre",
+    "justifiee": false,
+    "cours": "Arts plastiques"
+  },
+  {
+    "_id": "abs_13",
+    "eleve_id": "eleve_54",
+    "date": "2025-05-12",
+    "motif": "Sans motif",
+    "justifiee": true,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_14",
+    "eleve_id": "eleve_34",
+    "date": "2025-10-26",
+    "motif": "Raison familiale",
+    "justifiee": true,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_15",
+    "eleve_id": "eleve_92",
+    "date": "2025-05-13",
+    "motif": "Raison familiale",
+    "justifiee": false,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_16",
+    "eleve_id": "eleve_69",
+    "date": "2025-11-13",
+    "motif": "Sans motif",
+    "justifiee": false,
+    "cours": "Sciences"
+  },
+  {
+    "_id": "abs_17",
+    "eleve_id": "eleve_16",
+    "date": "2025-10-28",
+    "motif": "Autre",
+    "justifiee": false,
+    "cours": "Éducation physique"
+  },
+  {
+    "_id": "abs_18",
+    "eleve_id": "eleve_106",
+    "date": "2025-07-13",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_19",
+    "eleve_id": "eleve_100",
+    "date": "2025-03-31",
+    "motif": "Rendez-vous médical",
+    "justifiee": false,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_20",
+    "eleve_id": "eleve_78",
+    "date": "2025-12-09",
+    "motif": "Maladie",
+    "justifiee": false,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_21",
+    "eleve_id": "eleve_83",
+    "date": "2025-06-08",
+    "motif": "Sans motif",
+    "justifiee": true,
+    "cours": "Sciences"
+  },
+  {
+    "_id": "abs_22",
+    "eleve_id": "eleve_105",
+    "date": "2025-05-23",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_23",
+    "eleve_id": "eleve_103",
+    "date": "2025-07-02",
+    "motif": "Rendez-vous médical",
+    "justifiee": false,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_24",
+    "eleve_id": "eleve_4",
+    "date": "2025-09-26",
+    "motif": "Sans motif",
+    "justifiee": true,
+    "cours": "Éducation physique"
+  },
+  {
+    "_id": "abs_25",
+    "eleve_id": "eleve_57",
+    "date": "2025-12-07",
+    "motif": "Maladie",
+    "justifiee": false,
+    "cours": "Français"
+  },
+  {
+    "_id": "abs_26",
+    "eleve_id": "eleve_62",
+    "date": "2025-06-18",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Anglais"
+  },
+  {
+    "_id": "abs_27",
+    "eleve_id": "eleve_93",
+    "date": "2025-10-11",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_28",
+    "eleve_id": "eleve_8",
+    "date": "2025-08-17",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_29",
+    "eleve_id": "eleve_38",
+    "date": "2025-05-12",
+    "motif": "Sans motif",
+    "justifiee": true,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_30",
+    "eleve_id": "eleve_51",
+    "date": "2025-12-20",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Mathématiques"
+  },
+  {
+    "_id": "abs_31",
+    "eleve_id": "eleve_6",
+    "date": "2025-11-08",
+    "motif": "Raison familiale",
+    "justifiee": false,
+    "cours": "Français"
+  },
+  {
+    "_id": "abs_32",
+    "eleve_id": "eleve_47",
+    "date": "2025-04-08",
+    "motif": "Maladie",
+    "justifiee": true,
+    "cours": "Anglais"
+  },
+  {
+    "_id": "abs_33",
+    "eleve_id": "eleve_52",
+    "date": "2025-02-01",
+    "motif": "Sans motif",
+    "justifiee": true,
+    "cours": "Histoire-Géographie"
+  },
+  {
+    "_id": "abs_34",
+    "eleve_id": "eleve_66",
+    "date": "2025-10-27",
+    "motif": "Autre",
+    "justifiee": false,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_35",
+    "eleve_id": "eleve_81",
+    "date": "2025-02-20",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Éducation physique"
+  },
+  {
+    "_id": "abs_36",
+    "eleve_id": "eleve_84",
+    "date": "2025-11-21",
+    "motif": "Maladie",
+    "justifiee": true,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_37",
+    "eleve_id": "eleve_120",
+    "date": "2025-03-01",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_38",
+    "eleve_id": "eleve_55",
+    "date": "2025-04-12",
+    "motif": "Maladie",
+    "justifiee": true,
+    "cours": "Informatique"
+  },
+  {
+    "_id": "abs_39",
+    "eleve_id": "eleve_104",
+    "date": "2025-06-03",
+    "motif": "Autre",
+    "justifiee": true,
+    "cours": "Arts plastiques"
+  },
+  {
+    "_id": "abs_40",
+    "eleve_id": "eleve_14",
+    "date": "2025-02-27",
+    "motif": "Rendez-vous médical",
+    "justifiee": true,
+    "cours": "Informatique"
+  }
+]

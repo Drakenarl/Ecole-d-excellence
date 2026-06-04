@@ -1,0 +1,1442 @@
+[
+  {
+    "_id": "edt_1",
+    "classe": "6ème A",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_2",
+    "classe": "6ème A",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_3",
+    "classe": "6ème A",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_4",
+    "classe": "6ème A",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 7"
+  },
+  {
+    "_id": "edt_5",
+    "classe": "6ème A",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_6",
+    "classe": "6ème A",
+    "jour": "Mardi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_7",
+    "classe": "6ème A",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_8",
+    "classe": "6ème A",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_9",
+    "classe": "6ème A",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_10",
+    "classe": "6ème A",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_11",
+    "classe": "6ème A",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_12",
+    "classe": "6ème A",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_13",
+    "classe": "6ème A",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_14",
+    "classe": "6ème A",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_15",
+    "classe": "6ème A",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_16",
+    "classe": "6ème A",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_17",
+    "classe": "6ème A",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_18",
+    "classe": "6ème A",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_19",
+    "classe": "6ème A",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_20",
+    "classe": "6ème A",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_21",
+    "classe": "6ème A",
+    "jour": "Vendredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_22",
+    "classe": "6ème B",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_23",
+    "classe": "6ème B",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_24",
+    "classe": "6ème B",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_25",
+    "classe": "6ème B",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_26",
+    "classe": "6ème B",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_27",
+    "classe": "6ème B",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_28",
+    "classe": "6ème B",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_29",
+    "classe": "6ème B",
+    "jour": "Mercredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_30",
+    "classe": "6ème B",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_31",
+    "classe": "6ème B",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_32",
+    "classe": "6ème B",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_33",
+    "classe": "6ème B",
+    "jour": "Jeudi",
+    "creneau": "11:30-13:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_34",
+    "classe": "6ème B",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_35",
+    "classe": "6ème B",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_36",
+    "classe": "6ème B",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_37",
+    "classe": "6ème B",
+    "jour": "Vendredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_38",
+    "classe": "6ème B",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_39",
+    "classe": "5ème A",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_40",
+    "classe": "5ème A",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_41",
+    "classe": "5ème A",
+    "jour": "Lundi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_42",
+    "classe": "5ème A",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_43",
+    "classe": "5ème A",
+    "jour": "Mardi",
+    "creneau": "13:30-15:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_44",
+    "classe": "5ème A",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_45",
+    "classe": "5ème A",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 3"
+  },
+  {
+    "_id": "edt_46",
+    "classe": "5ème A",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_47",
+    "classe": "5ème A",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_48",
+    "classe": "5ème A",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_49",
+    "classe": "5ème A",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_50",
+    "classe": "5ème A",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_51",
+    "classe": "5ème A",
+    "jour": "Mercredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 7"
+  },
+  {
+    "_id": "edt_52",
+    "classe": "5ème A",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_53",
+    "classe": "5ème A",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_54",
+    "classe": "5ème A",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_55",
+    "classe": "5ème A",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 7"
+  },
+  {
+    "_id": "edt_56",
+    "classe": "5ème A",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_57",
+    "classe": "5ème A",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_58",
+    "classe": "5ème A",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_59",
+    "classe": "5ème A",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_60",
+    "classe": "5ème B",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_61",
+    "classe": "5ème B",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_62",
+    "classe": "5ème B",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_63",
+    "classe": "5ème B",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_64",
+    "classe": "5ème B",
+    "jour": "Lundi",
+    "creneau": "09:30-11:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_65",
+    "classe": "5ème B",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_66",
+    "classe": "5ème B",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_67",
+    "classe": "5ème B",
+    "jour": "Mardi",
+    "creneau": "13:30-15:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 3"
+  },
+  {
+    "_id": "edt_68",
+    "classe": "5ème B",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_69",
+    "classe": "5ème B",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_70",
+    "classe": "5ème B",
+    "jour": "Mercredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_71",
+    "classe": "5ème B",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_72",
+    "classe": "5ème B",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_73",
+    "classe": "5ème B",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_74",
+    "classe": "5ème B",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_75",
+    "classe": "5ème B",
+    "jour": "Vendredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_76",
+    "classe": "5ème B",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_77",
+    "classe": "5ème B",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_78",
+    "classe": "5ème B",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_79",
+    "classe": "4ème A",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_80",
+    "classe": "4ème A",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_81",
+    "classe": "4ème A",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_82",
+    "classe": "4ème A",
+    "jour": "Lundi",
+    "creneau": "09:30-11:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 3"
+  },
+  {
+    "_id": "edt_83",
+    "classe": "4ème A",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_84",
+    "classe": "4ème A",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_85",
+    "classe": "4ème A",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_86",
+    "classe": "4ème A",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_87",
+    "classe": "4ème A",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_88",
+    "classe": "4ème A",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_89",
+    "classe": "4ème A",
+    "jour": "Mercredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_90",
+    "classe": "4ème A",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_91",
+    "classe": "4ème A",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_92",
+    "classe": "4ème A",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_93",
+    "classe": "4ème A",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_94",
+    "classe": "4ème A",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_95",
+    "classe": "4ème A",
+    "jour": "Jeudi",
+    "creneau": "11:30-13:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 3"
+  },
+  {
+    "_id": "edt_96",
+    "classe": "4ème A",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_97",
+    "classe": "4ème A",
+    "jour": "Vendredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_98",
+    "classe": "4ème A",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_99",
+    "classe": "4ème A",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_100",
+    "classe": "4ème A",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_101",
+    "classe": "4ème B",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_102",
+    "classe": "4ème B",
+    "jour": "Lundi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_103",
+    "classe": "4ème B",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_104",
+    "classe": "4ème B",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_105",
+    "classe": "4ème B",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 7"
+  },
+  {
+    "_id": "edt_106",
+    "classe": "4ème B",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_107",
+    "classe": "4ème B",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 2"
+  },
+  {
+    "_id": "edt_108",
+    "classe": "4ème B",
+    "jour": "Mercredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_109",
+    "classe": "4ème B",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_110",
+    "classe": "4ème B",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_111",
+    "classe": "4ème B",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_112",
+    "classe": "4ème B",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_113",
+    "classe": "4ème B",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 9"
+  },
+  {
+    "_id": "edt_114",
+    "classe": "4ème B",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_115",
+    "classe": "4ème B",
+    "jour": "Jeudi",
+    "creneau": "11:30-13:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_116",
+    "classe": "4ème B",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_117",
+    "classe": "4ème B",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_118",
+    "classe": "4ème B",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_119",
+    "classe": "3ème A",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_120",
+    "classe": "3ème A",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_121",
+    "classe": "3ème A",
+    "jour": "Lundi",
+    "creneau": "09:30-11:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_122",
+    "classe": "3ème A",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_123",
+    "classe": "3ème A",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_124",
+    "classe": "3ème A",
+    "jour": "Mardi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 3"
+  },
+  {
+    "_id": "edt_125",
+    "classe": "3ème A",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_126",
+    "classe": "3ème A",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_127",
+    "classe": "3ème A",
+    "jour": "Mardi",
+    "creneau": "07:30-09:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_128",
+    "classe": "3ème A",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_129",
+    "classe": "3ème A",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_130",
+    "classe": "3ème A",
+    "jour": "Mercredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_131",
+    "classe": "3ème A",
+    "jour": "Mercredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_132",
+    "classe": "3ème A",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 13"
+  },
+  {
+    "_id": "edt_133",
+    "classe": "3ème A",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 7"
+  },
+  {
+    "_id": "edt_134",
+    "classe": "3ème A",
+    "jour": "Jeudi",
+    "creneau": "13:30-15:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_135",
+    "classe": "3ème A",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_136",
+    "classe": "3ème A",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Anglais",
+    "prof_id": "prof_5",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_137",
+    "classe": "3ème A",
+    "jour": "Vendredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_138",
+    "classe": "3ème A",
+    "jour": "Vendredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Gymnase"
+  },
+  {
+    "_id": "edt_139",
+    "classe": "3ème A",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_140",
+    "classe": "3ème A",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Laboratoire"
+  },
+  {
+    "_id": "edt_141",
+    "classe": "3ème B",
+    "jour": "Lundi",
+    "creneau": "11:30-13:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle 10"
+  },
+  {
+    "_id": "edt_142",
+    "classe": "3ème B",
+    "jour": "Lundi",
+    "creneau": "13:30-15:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_143",
+    "classe": "3ème B",
+    "jour": "Lundi",
+    "creneau": "07:30-09:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_144",
+    "classe": "3ème B",
+    "jour": "Lundi",
+    "creneau": "15:30-17:30",
+    "matiere": "Sciences",
+    "prof_id": "prof_3",
+    "salle": "Salle 4"
+  },
+  {
+    "_id": "edt_145",
+    "classe": "3ème B",
+    "jour": "Mardi",
+    "creneau": "15:30-17:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_146",
+    "classe": "3ème B",
+    "jour": "Mardi",
+    "creneau": "13:30-15:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 5"
+  },
+  {
+    "_id": "edt_147",
+    "classe": "3ème B",
+    "jour": "Mardi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 14"
+  },
+  {
+    "_id": "edt_148",
+    "classe": "3ème B",
+    "jour": "Mardi",
+    "creneau": "11:30-13:30",
+    "matiere": "Mathématiques",
+    "prof_id": "prof_1",
+    "salle": "Salle 11"
+  },
+  {
+    "_id": "edt_149",
+    "classe": "3ème B",
+    "jour": "Mercredi",
+    "creneau": "09:30-11:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_150",
+    "classe": "3ème B",
+    "jour": "Mercredi",
+    "creneau": "15:30-17:30",
+    "matiere": "Arts plastiques",
+    "prof_id": "prof_7",
+    "salle": "Salle informatique"
+  },
+  {
+    "_id": "edt_151",
+    "classe": "3ème B",
+    "jour": "Mercredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_152",
+    "classe": "3ème B",
+    "jour": "Mercredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 12"
+  },
+  {
+    "_id": "edt_153",
+    "classe": "3ème B",
+    "jour": "Mercredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_154",
+    "classe": "3ème B",
+    "jour": "Jeudi",
+    "creneau": "09:30-11:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 1"
+  },
+  {
+    "_id": "edt_155",
+    "classe": "3ème B",
+    "jour": "Jeudi",
+    "creneau": "11:30-13:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_156",
+    "classe": "3ème B",
+    "jour": "Jeudi",
+    "creneau": "07:30-09:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_157",
+    "classe": "3ème B",
+    "jour": "Jeudi",
+    "creneau": "15:30-17:30",
+    "matiere": "Informatique",
+    "prof_id": "prof_8",
+    "salle": "Salle 8"
+  },
+  {
+    "_id": "edt_158",
+    "classe": "3ème B",
+    "jour": "Vendredi",
+    "creneau": "13:30-15:30",
+    "matiere": "Éducation physique",
+    "prof_id": "prof_6",
+    "salle": "Salle 6"
+  },
+  {
+    "_id": "edt_159",
+    "classe": "3ème B",
+    "jour": "Vendredi",
+    "creneau": "07:30-09:30",
+    "matiere": "Histoire-Géographie",
+    "prof_id": "prof_4",
+    "salle": "Salle 15"
+  },
+  {
+    "_id": "edt_160",
+    "classe": "3ème B",
+    "jour": "Vendredi",
+    "creneau": "11:30-13:30",
+    "matiere": "Français",
+    "prof_id": "prof_2",
+    "salle": "Salle 1"
+  }
+]
