@@ -576,3 +576,189 @@ tbody tr:hover td { background: var(--surface); }
   background: var(--navy); color: var(--gold);
   padding: 12px 24px; border-radius: var(--radius);
 }
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE COMPLET — Mobile / Tablette / TV
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Bouton menu mobile ─────────────────────────────────────── */
+.btn-menu-mobile {
+  display: none;
+  background: transparent; border: none;
+  color: var(--text); cursor: pointer;
+  padding: 6px; border-radius: 6px;
+  transition: var(--transition);
+}
+.btn-menu-mobile:hover { background: var(--surface-2); }
+
+/* ── Overlay sidebar mobile ─────────────────────────────────── */
+.sidebar-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(13,30,61,0.5);
+  z-index: 49;
+}
+.sidebar-overlay.open { display: block; }
+
+/* ── Grande TV (1920px+) ────────────────────────────────────── */
+@media (min-width: 1920px) {
+  .sidebar { width: 280px; }
+  .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .content { padding: 32px 40px; }
+  .stat-value { font-size: 34px; }
+  .topbar { height: 70px; padding: 0 40px; }
+  .topbar-title { font-size: 20px; }
+  td, th { padding: 14px 20px; font-size: 14px; }
+}
+
+/* ── Tablette paysage (1024px - 1280px) ─────────────────────── */
+@media (max-width: 1280px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Tablette portrait (768px - 1024px) ─────────────────────── */
+@media (max-width: 1024px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .topbar-search { display: none; }
+  .form-row-3 { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── Mobile (max 768px) ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Body */
+  body { overflow: auto; }
+
+  /* Login */
+  .login-card {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 40px 24px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .register-card {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 32px 24px;
+  }
+
+  /* App layout */
+  #app { flex-direction: column; height: auto; min-height: 100vh; }
+
+  /* Sidebar mobile — tiroir */
+  .sidebar {
+    position: fixed; top: 0; left: -280px;
+    width: 260px; height: 100vh;
+    z-index: 50;
+    transition: left 0.3s ease;
+    box-shadow: var(--shadow-lg);
+  }
+  .sidebar.open { left: 0; }
+  .sidebar-logo-name, .sidebar-logo-year,
+  .nav-section-label, .nav-item span,
+  .nav-badge, .user-name, .user-role { display: block !important; }
+  .sidebar-logo { justify-content: flex-start; padding: 20px 16px; }
+  .nav-item { justify-content: flex-start; padding: 10px 14px; }
+  .nav-item .nav-icon { margin: 0; }
+  .user-chip { justify-content: flex-start; }
+
+  /* Bouton hamburger */
+  .btn-menu-mobile { display: flex; align-items: center; justify-content: center; }
+
+  /* Zone principale */
+  .main { width: 100%; }
+
+  /* Topbar */
+  .topbar { padding: 0 14px; gap: 8px; height: 54px; }
+  .topbar-title { font-size: 14px; }
+  .topbar-search { display: none; }
+
+  /* Contenu */
+  .content { padding: 14px; overflow-y: auto; }
+
+  /* Stats */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
+  .stat-card { padding: 12px 14px; }
+  .stat-value { font-size: 22px; }
+  .stat-icon { width: 30px; height: 30px; margin-bottom: 8px; }
+
+  /* Grilles */
+  .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 10px; }
+
+  /* Formulaires */
+  .form-row-2, .form-row-3 { grid-template-columns: 1fr; }
+
+  /* Tableau — scroll horizontal */
+  .table-container { overflow-x: auto; }
+  table { min-width: 500px; }
+  td, th { padding: 10px 10px; font-size: 12px; }
+  .table-header {
+    flex-direction: column; align-items: flex-start;
+    gap: 10px; padding: 12px 14px;
+  }
+  .table-actions { width: 100%; flex-wrap: wrap; gap: 6px; }
+  .table-actions input { width: 100% !important; }
+  .table-actions select { width: 100% !important; }
+
+  /* Modal */
+  .modal {
+    width: 100% !important;
+    max-width: 100vw !important;
+    max-height: 95vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    margin-top: auto;
+  }
+  .modal-backdrop { align-items: flex-end; }
+  .modal-body { padding: 16px; }
+  .modal-footer { padding: 12px 16px; }
+
+  /* EDT scroll */
+  .edt-grid { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .edt-table { min-width: 600px; }
+
+  /* Bulletin */
+  .bulletin-header { flex-direction: column; gap: 12px; }
+  .bulletin-eleve-info { text-align: left; }
+  .bulletin-summary { flex-direction: column; gap: 12px; }
+
+  /* Pagination */
+  .table-footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+
+  /* Boutons d'action dans les tableaux */
+  .btn-sm { padding: 4px 8px; }
+
+  /* Carte enfant parent */
+  .enfant-card { padding: 14px 16px; }
+  .enfant-name { font-size: 15px; }
+  .enfant-moy { font-size: 22px; }
+
+  /* Toast */
+  #toast-container { bottom: 12px; right: 12px; left: 12px; }
+  .toast { max-width: 100%; }
+}
+
+/* ── Très petit mobile (max 380px) ──────────────────────────── */
+@media (max-width: 380px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-value { font-size: 20px; }
+  .content { padding: 10px; }
+  .topbar-title { font-size: 13px; }
+}
+
+/* ── Print (impression PDF) ─────────────────────────────────── */
+@media print {
+  .sidebar, .topbar, .btn, .modal-close,
+  .table-actions, .table-footer, #toast-container,
+  .btn-menu-mobile, .sidebar-overlay { display: none !important; }
+  body { background: white; overflow: visible; }
+  #app { display: block; height: auto; }
+  .main { width: 100%; }
+  .content { padding: 0; overflow: visible; }
+  .bulletin-header { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .table-container { border: 1px solid #ccc; }
+}

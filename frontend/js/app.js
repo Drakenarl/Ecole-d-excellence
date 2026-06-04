@@ -389,8 +389,10 @@ async function loadEleves() {
             ${STATE.classes.map(c=>`<option>${c}</option>`).join('')}
           </select>
           <button class="btn btn-primary" onclick="ouvrirFormEleve()">${icon('plus')} Inscrire un élève</button>
+          <button class="btn btn-danger" onclick="supprimerTousEleves()">🗑️ Vider la liste</button>
         </div>
       </div>
+      <div style="padding:0 20px 12px;display:flex;justify-content:flex-end"><button class="btn" onclick="exportPDF('eleves')">📄 Exporter PDF</button></div>
       <div id="eleves-body">${loader()}</div>
       <div class="table-footer"><span id="eleves-count">—</span><div class="pagination" id="eleves-pag"></div></div>
     </div>`;
@@ -775,7 +777,7 @@ async function loadAbsences() {
     <div class="table-container">
       <div class="table-header">
         <span class="table-title">Absences</span>
-        ${role !== 'parent' ? `<button class="btn btn-primary" onclick="ouvrirFormAbsence()">${icon('plus')} Enregistrer</button>` : ''}
+        ${role !== 'parent' ? `<button class="btn btn-primary" onclick="ouvrirFormAbsence()">${icon('plus')} Enregistrer</button><button class="btn" onclick="exportPDF('absences')">📄 PDF</button>` : ''}
       </div>
       <div id="absences-body">${loader()}</div>
     </div>`;
@@ -833,6 +835,7 @@ async function loadAgenda() {
         ${role === 'directeur' ? `<select class="form-select" id="edt-classe" onchange="fetchEDT()" style="width:160px"><option value="">Toutes les classes</option>${STATE.classes.map(c=>`<option>${c}</option>`).join('')}</select>` : ''}
       </div>
       ${role === 'directeur' ? `<button class="btn btn-primary" onclick="ouvrirFormEDT()">${icon('plus')} Ajouter un créneau</button>` : ''}
+      <button class="btn" onclick="exportPDF('edt')">📄 PDF</button>
     </div>
     <div class="table-container"><div id="edt-content">${loader()}</div></div>`;
   fetchEDT();
@@ -1144,3 +1147,187 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// ══════════════════════════════════════════════════════════════
+// ── EXPORT PDF (utilise window.print avec styles dédiés) ──────
+// ══════════════════════════════════════════════════════════════
+function exportPDF(type, id) {
+  let html = '';
+  if (type === 'bulletin') {
+    const body = document.getElementById('modal-bulletin-body');
+    if (!body) { toast('Ouvrez d\'abord le bulletin', 'error'); return; }
+    html = body.innerHTML;
+  } else if (type === 'eleves') {
+    const table = document.querySelector('#eleves-body table');
+    if (!table) { toast('Chargez d\'abord la liste', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Liste des élèves</h2>` + table.outerHTML;
+  } else if (type === 'absences') {
+    const table = document.querySelector('#absences-body table');
+    if (!table) { toast('Chargez d\'abord les absences', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Absences</h2>` + table.outerHTML;
+  } else if (type === 'edt') {
+    const table = document.querySelector('.edt-table');
+    if (!table) { toast('Chargez d\'abord l\'emploi du temps', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Emploi du temps</h2>` + table.outerHTML;
+  }
+
+  const win = window.open('', '_blank');
+  win.document.write(`
+    <!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <title>Export — École Excellence</title>
+    <style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; padding: 32px; color: #111; }
+      table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+      th { background: #0d1e3d; color: #fff; padding: 10px 14px; font-size: 12px; text-align: left; }
+      td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid #e2e6f0; }
+      tr:hover td { background: #f7f8fc; }
+      .bulletin-header { background: #0d1e3d; color: #fff; padding: 24px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; }
+      .bulletin-school { font-size: 18px; font-weight: 700; }
+      .bulletin-trimestre { font-size: 12px; opacity: 0.6; margin-top: 3px; }
+      .bulletin-eleve-info { text-align: right; font-size: 13px; opacity: 0.85; }
+      .bulletin-body { border: 1px solid #e2e6f0; border-top: none; border-radius: 0 0 10px 10px; }
+      .bulletin-summary { display: flex; gap: 20px; padding: 16px 24px; background: #f7f8fc; border-top: 1px solid #e2e6f0; }
+      .bulletin-moy-val { font-size: 32px; font-weight: 700; color: #0d1e3d; }
+      .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+      .badge-success { background: #ecfdf5; color: #059669; }
+      .badge-warning { background: #fffbeb; color: #d97706; }
+      .badge-danger  { background: #fef2f2; color: #dc2626; }
+      .badge-navy    { background: rgba(13,30,61,0.1); color: #0d1e3d; }
+      .badge-gold    { background: #fff8e6; color: #d4920a; }
+      .badge-info    { background: #eff6ff; color: #2563eb; }
+      .text-success { color: #059669; }
+      .text-warning { color: #d97706; }
+      .text-danger  { color: #dc2626; }
+      h2 { color: #0d1e3d; }
+      @media print { body { padding: 16px; } }
+    </style>
+    </head><body>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:2px solid #0d1e3d;padding-bottom:12px">
+      <div style="font-size:20px;font-weight:700;color:#0d1e3d">🏫 École Excellence</div>
+      <div style="font-size:12px;color:#9ca3af">Édité le ${new Date().toLocaleDateString('fr-FR')}</div>
+    </div>
+    ${html}
+    <script>window.onload = function(){ window.print(); }<\/script>
+    </body></html>`);
+  win.document.close();
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── SUPPRIMER TOUS LES ÉLÈVES ─────────────────────────────────
+// ══════════════════════════════════════════════════════════════
+async function supprimerTousEleves() {
+  const confirmation = prompt(
+    '⚠️ ATTENTION — Cette action supprimera TOUS les élèves, leurs notes et absences.\n\n' +
+    'Tapez "CONFIRMER" pour continuer :'
+  );
+  if (confirmation !== 'CONFIRMER') {
+    toast('Suppression annulée', 'warning');
+    return;
+  }
+  try {
+    const eleves = await api('GET', '/eleves?limit=500');
+    const liste = eleves?.data || [];
+    if (!liste.length) { toast('Aucun élève à supprimer', 'warning'); return; }
+    let count = 0;
+    for (const e of liste) {
+      await api('DELETE', `/eleves/${e._id}`);
+      count++;
+    }
+    toast(`✅ ${count} élève(s) supprimé(s)`, 'success');
+    fetchEleves();
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+// ── Sidebar mobile toggle ─────────────────────────────────────
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('open');
+}
+
+
+// ══════════════════════════════════════════════════════════════
+// ── EXPORT PDF ────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════
+function exportPDF(type) {
+  let html = '';
+  if (type === 'bulletin') {
+    const body = document.getElementById('modal-bulletin-body');
+    if (!body) { toast('Ouvrez d\'abord le bulletin', 'error'); return; }
+    html = body.innerHTML;
+  } else if (type === 'eleves') {
+    const table = document.querySelector('#eleves-body table');
+    if (!table) { toast('Chargez d\'abord la liste', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Liste des élèves</h2>` + table.outerHTML;
+  } else if (type === 'absences') {
+    const table = document.querySelector('#absences-body table');
+    if (!table) { toast('Chargez d\'abord les absences', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Absences</h2>` + table.outerHTML;
+  } else if (type === 'edt') {
+    const table = document.querySelector('.edt-table');
+    if (!table) { toast('Chargez d\'abord l\'emploi du temps', 'error'); return; }
+    html = `<h2 style="font-family:sans-serif;margin-bottom:16px">Emploi du temps</h2>` + table.outerHTML;
+  }
+
+  const win = window.open('', '_blank');
+  win.document.write(`<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>Export — École Excellence</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 32px; color: #111; }
+      table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+      th { background: #0d1e3d; color: #fff; padding: 10px 14px; font-size: 12px; text-align: left; }
+      td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid #e2e6f0; }
+      .bulletin-header { background: #0d1e3d; color: #fff; padding: 24px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; }
+      .bulletin-school { font-size: 18px; font-weight: 700; }
+      .bulletin-trimestre { font-size: 12px; opacity: 0.6; margin-top: 3px; }
+      .bulletin-eleve-info { text-align: right; font-size: 13px; opacity: 0.85; }
+      .bulletin-body { border: 1px solid #e2e6f0; border-top: none; }
+      .bulletin-summary { display: flex; gap: 20px; padding: 16px 24px; background: #f7f8fc; border-top: 1px solid #e2e6f0; }
+      .bulletin-moy-val { font-size: 32px; font-weight: 700; color: #0d1e3d; }
+      .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+      .badge-success { background: #ecfdf5; color: #059669; }
+      .badge-warning { background: #fffbeb; color: #d97706; }
+      .badge-danger  { background: #fef2f2; color: #dc2626; }
+      .badge-navy    { background: #e8ecf5; color: #0d1e3d; }
+      .badge-gold    { background: #fff8e6; color: #d4920a; }
+      .badge-info    { background: #eff6ff; color: #2563eb; }
+      .text-success { color: #059669; } .text-warning { color: #d97706; } .text-danger { color: #dc2626; }
+      .mini-av { display: none; }
+      @media print { body { padding: 16px; } }
+    </style></head><body>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:2px solid #0d1e3d;padding-bottom:12px">
+      <div style="font-size:20px;font-weight:700;color:#0d1e3d">🏫 École Excellence</div>
+      <div style="font-size:12px;color:#9ca3af">Édité le ${new Date().toLocaleDateString('fr-FR')}</div>
+    </div>
+    ${html}
+    <script>window.onload=function(){window.print();}<\/script>
+    </body></html>`);
+  win.document.close();
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── SUPPRIMER TOUS LES ÉLÈVES ─────────────────────────────────
+// ══════════════════════════════════════════════════════════════
+async function supprimerTousEleves() {
+  const confirmation = prompt(
+    '⚠️ ATTENTION — Cette action supprimera TOUS les élèves, leurs notes et absences.\n\nTapez "CONFIRMER" pour continuer :'
+  );
+  if (confirmation !== 'CONFIRMER') { toast('Suppression annulée', 'warning'); return; }
+  try {
+    const eleves = await api('GET', '/eleves?limit=500');
+    const liste = eleves?.data || [];
+    if (!liste.length) { toast('Aucun élève à supprimer', 'warning'); return; }
+    let count = 0;
+    for (const e of liste) { await api('DELETE', `/eleves/${e._id}`); count++; }
+    toast(`✅ ${count} élève(s) supprimé(s)`, 'success');
+    fetchEleves();
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+// ── Sidebar mobile toggle ─────────────────────────────────────
+function toggleSidebar() {
+  document.querySelector('.sidebar').classList.toggle('open');
+  document.getElementById('sidebar-overlay').classList.toggle('open');
+}

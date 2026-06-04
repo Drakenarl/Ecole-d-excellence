@@ -10,6 +10,7 @@
 <body>
 
 <!-- ═══════════════ ÉCRAN CONNEXION ══════════════════════════ -->
+<div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
 <div id="login-screen">
   <div class="login-card">
     <div class="login-logo">
@@ -116,6 +117,9 @@
   <!-- ── Zone principale ── -->
   <div class="main">
     <div class="topbar">
+      <button class="btn-menu-mobile" onclick="toggleSidebar()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
       <div>
         <div class="topbar-title" id="topbar-title">Tableau de bord</div>
         <div class="topbar-sub" id="topbar-sub"></div>
@@ -150,7 +154,10 @@
   <div class="modal" style="width:720px">
     <div class="modal-header">
       <span class="modal-title">Bulletin scolaire</span>
-      <button class="modal-close" onclick="closeModal('modal-bulletin')">✕</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn btn-sm btn-primary" onclick="exportPDF('bulletin')">📄 Télécharger PDF</button>
+        <button class="modal-close" onclick="closeModal('modal-bulletin')">✕</button>
+      </div>
     </div>
     <div class="modal-body" id="modal-bulletin-body"></div>
   </div>
